@@ -1,4 +1,12 @@
-import { Container, Row, Col } from 'reactstrap';
+import {
+	Container,
+	Row,
+	Col,
+	Card,
+	Button,
+	CardTitle,
+	CardText,
+} from 'reactstrap';
 import SubHeader from '../components/Subheader';
 import React from 'react';
 
@@ -57,16 +65,37 @@ const HomePage = () => {
 					</div>
 				</div>
 			</Row>
-			<Row className="pt-4">
-				<div className="hexagon">
-					<div className="shape"></div>
-				</div>
-				<div className="hexagon">
-					<div className="shape"></div>
-				</div>
-				<div className="hexagon">
-					<div className="shape"></div>
-				</div>
+			<Row className="py-5">
+				<Col md="4" sm="6">
+					<Card body className="shadow">
+						<CardTitle>Special Title Treatment</CardTitle>
+						<CardText>
+							With supporting text below as a natural lead-in to additional
+							content.
+						</CardText>
+						<Button>Go somewhere</Button>
+					</Card>
+				</Col>
+				<Col md="4" sm="6">
+					<Card body className="shadow">
+						<CardTitle>Special Title Treatment</CardTitle>
+						<CardText>
+							With supporting text below as a natural lead-in to additional
+							content.
+						</CardText>
+						<Button>Go somewhere</Button>
+					</Card>
+				</Col>
+				<Col md="4" sm="6">
+					<Card body className="shadow">
+						<CardTitle>Special Title Treatment</CardTitle>
+						<CardText>
+							With supporting text below as a natural lead-in to additional
+							content.
+						</CardText>
+						<Button>Go somewhere</Button>
+					</Card>
+				</Col>
 			</Row>
 		</Container>
 	);

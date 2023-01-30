@@ -38,8 +38,11 @@
 	}
 }
 
-.nav-link {
-	color: #fff;
+.redAccent {
+	color: #fb5a6e !important;
+}
+.greyAccent {
+	color: grey !important;
 }
 
 @tailwind base;
