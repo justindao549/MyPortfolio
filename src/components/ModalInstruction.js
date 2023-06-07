@@ -39,6 +39,7 @@ const ModalInstruction = ({ isOpen, toggle }) => {
 					<Col xs="5" style={{ display: 'flex', justifyContent: 'center' }}>
 						<a
 							target="_blank"
+							rel="noopener noreferrer"
 							href="https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www">
 							<button className="Modal-Body-Button" onClick={toggle}>
 								Download Expo Go from Google Play Android{' '}
@@ -62,6 +63,7 @@ const ModalInstruction = ({ isOpen, toggle }) => {
 					<Col xs="5" style={{ display: 'flex', justifyContent: 'center' }}>
 						<a
 							target="_blank"
+							rel="noopener noreferrer"
 							href="https://expo.dev/@jdao549/what-the-fork?serviceType=classic&distribution=expo-go">
 							<button className="Modal-Body-Button" onClick={toggle}>
 								Scan the QR code, or open link

@@ -34,6 +34,7 @@ function PortfolioPage() {
 					/>
 					<a
 						target="_blank"
+						rel="noopener noreferrer"
 						href="https://expo.dev/@jdao549/what-the-fork?serviceType=classic&distribution=expo-go"></a>
 					<button
 						className="button fade-in2"
@@ -44,7 +45,10 @@ function PortfolioPage() {
 				</Col>
 				<Col lg="6" className="pr-20 pb-20 pt-10 Portfolio-Title">
 					<h2 style={{ fontSize: 20 }}>Desktop App</h2>
-					<a href="https://nitrofit-react.netlify.app/" target="_blank">
+					<a
+						rel="noopener noreferrer"
+						href="https://nitrofit-react.netlify.app/"
+						target="_blank">
 						<img
 							className="clickable"
 							src={nitroFit}
