@@ -1,104 +1,93 @@
-import {
-	Container,
-	Row,
-	Col,
-	Card,
-	Button,
-	CardTitle,
-	CardText,
-} from 'reactstrap';
-import SubHeader from '../components/Subheader';
-import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import backgroundImage from '../app/assets/background4.jpg';
+import Resume from '../app/assets/Dao, Justin Web Developer.pdf';
 
-const HomePage = () => {
+const HomePage2 = () => {
+	const handleDownloadResume = () => {
+		window.open(Resume);
+	};
+	const handleCopyEmail = () => {
+		console.log('Button clicked');
+		const email = 'justindao549@gmail.com';
+		console.log('Copying email:', email);
+		navigator.clipboard
+			.writeText(email)
+			.then(() => {
+				console.log('Successfully copied email.');
+				alert('Email copied to clipboard!');
+			})
+			.catch((error) => {
+				console.error('Failed to copy email:', error);
+			});
+	};
+
 	return (
-		<Container>
-			<SubHeader current="Home" />
-			<Row className="text-center ">
-				<h2 className="text-7xl py-4 text-[#fb5a6e] font-sans font-bold uppercase text-center">
-					Justin Dao.
-				</h2>
-
-				<h3 className="text-3xl py-3 text-[#212f4f] font-sans  uppercase tracking-widest ">
-					<span className="text-[#fb5a6e]"> {'<'} </span>Software Developer
-					<span className="text-[#fb5a6e]"> {'>'} </span>
-				</h3>
-				<h1 className="text-sm text-gray-500 pt-5 px-20">
+		<Container fluid style={containerStyle}>
+			<Row className="align-items-center">
+				<Col className="d-flex flex-column">
+					<h1 className="main-heading fade-in">Justin</h1>
+					<h2 className="sub-heading fade-in">Dao</h2>
+				</Col>
+				<h3 className="job-title tracking-wider fade-in">Software Developer</h3>
+				<h1 className="description fade-in">
 					I've got a passion for all things technology and design, from software
-					engineering to UI/UX.
+					engineering to UI/UX. <br />
+					<br />
+					<br /> Turning ideas into real-life products is my calling!
 				</h1>
-				<h1 className="text-sm text-gray-500 pb-14 px-20">
-					Turning ideas into real life products is my calling!
-				</h1>
-			</Row>
-			<Row className="font-sans text-gray-500 shadow">
-				<div className="d-flex flex-row flex-nowrap my-3 px-3 justify-content-evenly ">
-					<div>
-						<img className="w-15 h-10" src="./icon_html.png" />
-						HTML 5
-					</div>
-					<div>
-						<img className="w-15 h-10" src="./icon_css.png" />
-						CSS
-					</div>
-					<div>
-						<img className="w-15 h-10" src="./icon_javascript.png" />
-						JS
-					</div>
-					<div>
-						<img className="w-15 h-10" src="./icon_react-native.png" />
-						React
-					</div>
-					<div>
-						<img className="w-15 h-10" src="./icon_mongodb.png" />
-						Mongo DB
-					</div>
-					<div>
-						<img className="w-15 h-10" src="./icon_node-js.png" />
-						Node JS
-					</div>
-					<div>
-						<img className="w-15 h-10" src="./icon_tailwindcss.png" /> Tailwind
-					</div>
-					<div>
-						<img className="w-15 h-10" src="./icon_bootstrap.png" /> Bootstrap
-					</div>
+				<br />
+				<br />
+				<div className="button-container ">
+					<button onClick={handleDownloadResume} className="button fade-in">
+						Resume
+					</button>
+					<button className="button fade-in2">
+						<a
+							href="https://github.com/justindao549"
+							target="_blank"
+							style={{ textDecoration: 'none', color: 'inherit' }}>
+							Github
+						</a>
+					</button>
+					<button className="button fade-in3">
+						<a
+							href="https://www.linkedin.com/in/justindao1/"
+							target="_blank"
+							style={{ textDecoration: 'none', color: 'inherit' }}>
+							linkedin
+						</a>
+					</button>
+				</div>{' '}
+				<div className="button-container ">
+					<button onClick={handleCopyEmail} className="button-email fade-in3">
+						justindao549@gmail.com
+					</button>
 				</div>
-			</Row>
-			<Row className="py-5">
-				<Col md="4" sm="6">
-					<Card body className="shadow">
-						<CardTitle>Special Title Treatment</CardTitle>
-						<CardText>
-							With supporting text below as a natural lead-in to additional
-							content.
-						</CardText>
-						<Button>Go somewhere</Button>
-					</Card>
-				</Col>
-				<Col md="4" sm="6">
-					<Card body className="shadow">
-						<CardTitle>Special Title Treatment</CardTitle>
-						<CardText>
-							With supporting text below as a natural lead-in to additional
-							content.
-						</CardText>
-						<Button>Go somewhere</Button>
-					</Card>
-				</Col>
-				<Col md="4" sm="6">
-					<Card body className="shadow">
-						<CardTitle>Special Title Treatment</CardTitle>
-						<CardText>
-							With supporting text below as a natural lead-in to additional
-							content.
-						</CardText>
-						<Button>Go somewhere</Button>
-					</Card>
-				</Col>
 			</Row>
 		</Container>
 	);
 };
 
-export default HomePage;
+export default HomePage2;
+
+const containerStyle = {
+	backgroundImage: `
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 25%,
+        rgba(0, 0, 0, 0) 100%
+      ), linear-gradient(
+		to right,
+		rgba(0, 0, 0, 1) 0%,
+		rgba(0, 0, 0, .5) 50%,
+		rgba(0, 0, 0, 0) 100%
+	  ),
+      url(${backgroundImage})
+    `,
+	backgroundSize: 'cover',
+	backgroundRepeat: 'no-repeat',
+	minHeight: '100vh',
+};
