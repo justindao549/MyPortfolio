@@ -52,6 +52,7 @@ function PortfolioPage() {
 						href="https://nitrofit-react.netlify.app/"
 						target="_blank">
 						<img
+							alt="NitroFit Link"
 							className="clickable"
 							src={nitroFit}
 							style={{
