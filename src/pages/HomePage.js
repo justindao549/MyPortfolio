@@ -44,6 +44,7 @@ const HomePage2 = () => {
 					</button>
 					<button className="button fade-in2">
 						<a
+							rel="noreferrer"
 							href="https://github.com/justindao549"
 							target="_blank"
 							style={{ textDecoration: 'none', color: 'inherit' }}>
@@ -52,6 +53,7 @@ const HomePage2 = () => {
 					</button>
 					<button className="button fade-in3">
 						<a
+							rel="noreferrer"
 							href="https://www.linkedin.com/in/justindao1/"
 							target="_blank"
 							style={{ textDecoration: 'none', color: 'inherit' }}>

@@ -25,6 +25,7 @@ function PortfolioPage() {
 						className="clickable "
 						onClick={carouselToggle}
 						src={image1}
+						alt="Mobile App"
 						style={{
 							maxHeight: '550px',
 							width: '100%',
@@ -33,6 +34,7 @@ function PortfolioPage() {
 						}}
 					/>
 					<a
+						aria-label="Expo Link"
 						target="_blank"
 						rel="noopener noreferrer"
 						href="https://expo.dev/@jdao549/what-the-fork?serviceType=classic&distribution=expo-go"></a>
