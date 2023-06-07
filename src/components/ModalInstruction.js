@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Modal, ModalHeader, ModalBody, Button } from 'reactstrap';
+import { Row, Col, Modal, ModalBody, Button } from 'reactstrap';
 
 const ModalInstruction = ({ isOpen, toggle }) => {
 	return (
