@@ -1,6 +1,5 @@
 import { Container, Row, Col } from 'reactstrap';
-import { useNavigate } from 'react-router-dom';
-import React, { useState } from 'react';
+import React from 'react';
 import backgroundImage from '../app/assets/background4.jpg';
 import Resume from '../app/assets/Dao, Justin Web Developer.pdf';
 
