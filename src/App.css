@@ -16,6 +16,10 @@
 	font-size: calc(10px + 2vmin);
 }
 
+body {
+	overflow-x: hidden;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -126,10 +130,10 @@
 	line-height: 3;
 	text-decoration: none;
 	padding: 5px 20px;
-	border-radius: 10px;
+	border-radius: 5px;
 	display: flex;
 	justify-content: center;
-	min-width: 130px;
+	min-width: 110px;
 }
 
 .nav-linksMob.active {
@@ -155,9 +159,9 @@
 }
 
 .main-heading {
-	font-size: 8rem;
-	padding-top: 9rem;
-	padding-bottom: 0;
+	font-size: 7rem; /*8rem;*/
+	padding-top: 6rem;
+	/* padding-bottom: 0; */
 	margin-bottom: 1rem;
 	color: white;
 	font-family: 'lemon_milk_light', sans-serif;
@@ -165,7 +169,7 @@
 }
 
 .sub-heading {
-	font-size: 13rem;
+	font-size: 11rem;
 	padding-top: 0;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -226,7 +230,7 @@
 	background-color: rgba(255, 255, 255, 0.3);
 }
 .About-main-heading {
-	font-size: 5rem;
+	font-size: 4rem;
 	padding-top: 6rem;
 	padding-bottom: 0;
 	margin-bottom: 1rem;
@@ -246,7 +250,7 @@
 }
 
 .Portfolio-main-heading {
-	font-size: 5rem;
+	font-size: 4rem;
 	padding-top: 6rem;
 	padding-bottom: 0;
 	margin-bottom: 1rem;
