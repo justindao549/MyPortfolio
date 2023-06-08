@@ -15,7 +15,7 @@ function AboutPage() {
 					</p>
 					<p className="About-description fade-in3">
 						So here's my story: Not too long ago I was once a Financial Analyst
-						for 6.5 years, and I really loved my position and the people that I
+						for 7.5 years, and I really loved my position and the people that I
 						worked with...But for several years, there was this voice in the
 						back of my head that wanted to explore the technology field - almost
 						a calling.
