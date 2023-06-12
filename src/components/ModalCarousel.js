@@ -1,5 +1,5 @@
 import React from 'react';
-import { Modal, ModalBody } from 'reactstrap';
+import { Modal, ModalBody, ModalHeader, Button } from 'reactstrap';
 import { Carousel as BootstrapCarousel, Row, Col } from 'react-bootstrap';
 import image1 from '../app/assets/WTF-ReactNative/WelcomeScreen.png';
 import image2 from '../app/assets/WTF-ReactNative/LoginScreen.png';
@@ -72,11 +72,19 @@ const ModalCarousel = ({ isOpen, toggle }) => (
 					borderRadius: '20px',
 					height: '100%',
 					width: '75vw',
-					// maxHeight: '100%',
-					// maxWidth: '100%',
 				}}>
 				{images.map((image, index) => (
 					<BootstrapCarousel.Item key={index}>
+						<Button
+							close
+							onClick={toggle}
+							style={{
+								position: 'absolute',
+								right: '10px',
+								zIndex: '1000',
+								height: '25px',
+							}}
+						/>
 						<Row>
 							<Col lg={4} className="d-flex justify-content-center ">
 								<img
